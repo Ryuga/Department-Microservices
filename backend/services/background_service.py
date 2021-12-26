@@ -22,12 +22,9 @@ conf = ConnectionConfig(
 
 
 async def get_html_formatted_message(reg_id, programs_selected, qrcode_url, total_value):
-    print("working", programs_selected)
     pricing = ""
-
     for program_name, fee in programs_selected.items():
         pricing = pricing + pricing_row.format(program_name=program_name, fee=fee)
-
     template = template_2nd_half.format(reg_id=reg_id, pricing=pricing, qrcode_url=qrcode_url, total_value=total_value)
     return template_1st_half + template
 
