@@ -53,12 +53,12 @@ async def post_transaction_microservice():
             await student.fetch_related("user")
             if not registration.qr:
                 img = qrcode.make(f"https://admin.christcs.in/data/users/qr/{registration.id}/")
-                img.save("temp/myqrcode.png")
-                resp = api.upload_file(open("temp/myqrcode.png", "rb"))
+                img.save("myqrcode.png")
+                resp = api.upload_file(open("myqrcode.png", "rb"))
                 if resp:
                     registration.qr = resp["attachments"][0]["url"]
                     await registration.save()
-                os.remove("temp/myqrcode.png")
+                os.remove("myqrcode.png")
             formatted_email_body = await get_html_formatted_message(
                 registration.id,
                 transaction.events_selected_json,
