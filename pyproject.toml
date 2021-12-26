@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "department-microservice"
+version = "0.1.0"
+description = ""
+authors = ["ryuga <vaishnav2353@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tortoise-orm = "^0.18.0"
+uvicorn = "^0.16.0"
+asyncpg = "^0.25.0"
+qrcode = {extras = ["pil"], version = "^7.3.1"}
+aiohttp = "^3.8.1"
+requests = "^2.26.0"
+fastapi = "0.70.0"
+fastapi-mail = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
