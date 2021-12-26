@@ -84,7 +84,7 @@ template_2nd_half = """
                                           <table border="0" cellpadding="0" cellspacing="0" class="image_block" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                              <tr>
                                                 <td style="width:100%;padding-right:0px;padding-left:0px;padding-top:45px;">
-                                                   <div align="center" style="line-height:10px"><a href="www.example.com" style="outline:none" tabindex="-1" target="_blank"><img alt="Cool Burger Walking" src="{qrcode_url}" style="display: block; height: auto; border: 0; width: 170px; max-width: 100%;" title="Cool Burger Walking" width="170"/></a></div>
+                                                   <div align="center" style="line-height:10px"><a href="www.example.com" style="outline:none" tabindex="-1" target="_blank"><img alt="MyQrCode" src="{qrcode_url}" style="display: block; height: auto; border: 0; width: 170px; max-width: 100%;" title="Cool Burger Walking" width="170"/></a></div>
                                                 </td>
                                              </tr>
                                           </table>
