@@ -6,3 +6,4 @@ fastapi~=0.70.0
 tortoise-orm
 fastapi-mail
 asyncpg
+pillow~= 8.4.0
