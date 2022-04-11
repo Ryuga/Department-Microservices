@@ -49,7 +49,7 @@ async def post_transaction_microservice():
             student = registration.student
             await student.fetch_related("user")
             if not registration.qr:
-                img = qrcode.make(f"https://admin.christcs.in/data/users/qr/{registration.id}/")
+                img = qrcode.make(f"https://dashboard.christcs.in/event/registration/details/{registration.id}/")
                 img.save("myqrcode.png")
                 resp = api.upload_file(open("myqrcode.png", "rb"))
                 if resp:
